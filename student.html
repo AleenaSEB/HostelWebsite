@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>👩‍🎓 Student Dashboard</h2>
+
+    <h3>🍽️ Today’s Food Menu</h3>
+    <p id="menu">Menu not updated</p>
+
+    <hr>
+
+    <h3>⭐ Rate Today’s Food</h3>
+    <select id="rating">
+      <option value="">Select rating</option>
+      <option value="1">1 ⭐</option>
+      <option value="2">2 ⭐</option>
+      <option value="3">3 ⭐</option>
+      <option value="4">4 ⭐</option>
+      <option value="5">5 ⭐</option>
+    </select>
+    <br>
+    <button type="button" onclick="saveRating()">Submit Rating</button>
+
+    <hr>
+
+    <h3>📢 Complaint Box</h3>
+
+    <select id="type">
+      <option>Food</option>
+      <option>Room</option>
+      <option>Water</option>
+      <option>Electricity</option>
+    </select>
+    <br><br>
+
+    <textarea id="complaint" placeholder="Write your complaint here"></textarea>
+    <br>
+
+    <!-- IMPORTANT: type="button" -->
+    <button type="button" onclick="saveComplaint()">Submit Complaint</button>
+
+    <br><br>
+    <button type="button" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- VERY IMPORTANT -->
+  <script src="script.js"></script>
+</body>
+</html>

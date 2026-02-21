@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matron Dashboard</title>
+</head>
+<body>
+
+  <h2>Matron Dashboard</h2>
+
+  <h3>Update Food Menu</h3>
+  <textarea id="menuText" placeholder="Enter today’s menu"></textarea><br>
+  <button onclick="saveMenu()">Save Menu</button>
+
+  <script>
+    function saveMenu() {
+      let menu = document.getElementById("menuText").value;
+      localStorage.setItem("menu", menu);
+      alert("Menu updated successfully");
+    }
+  </script>
+
+</body>
+</html>

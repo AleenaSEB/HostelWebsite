@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warden Dashboard</title>
+</head>
+<body>
+
+  <h2>Warden Dashboard</h2>
+
+  <h3>📢 Student Complaints</h3>
+  <p id="showComplaint"></p>
+
+  <h3>⭐ Food Rating</h3>
+  <p id="showRating"></p>
+
+  <script>
+    window.onload = function () {
+      let complaint = localStorage.getItem("complaint");
+      let rating = localStorage.getItem("rating");
+
+      document.getElementById("showComplaint").innerText =
+        complaint ? complaint : "No complaints yet";
+
+      document.getElementById("showRating").innerText =
+        rating ? rating + " ⭐" : "No rating yet";
+    };
+  </script>
+
+</body>
+</html>
